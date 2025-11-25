@@ -1,0 +1,196 @@
+export interface Product {
+  id: string
+  name: string
+  slug: string
+  price: number
+  originalPrice?: number
+  category: string
+  colors: string[]
+  materials: string[]
+  image: string
+  hoverImage?: string
+  badge?: string
+  rating: number
+  reviewCount: number
+}
+
+export const products: Product[] = [
+  {
+    id: "1",
+    name: "Oslo Sectional Sofa",
+    slug: "oslo-sectional-sofa",
+    price: 2499,
+    originalPrice: 2899,
+    category: "sofas",
+    colors: ["Charcoal", "Cream", "Sage"],
+    materials: ["Velvet", "Wood"],
+    image: "/mid-century-modern-sectional-sofa-in-charcoal-velv.jpg",
+    hoverImage: "/mid-century-modern-sectional-sofa-different-angle.jpg",
+    badge: "Sale",
+    rating: 4.8,
+    reviewCount: 124,
+  },
+  {
+    id: "2",
+    name: "Bergen Lounge Chair",
+    slug: "bergen-lounge-chair",
+    price: 899,
+    category: "chairs",
+    colors: ["Rust", "Navy", "Olive"],
+    materials: ["Leather", "Walnut"],
+    image: "/mid-century-modern-lounge-chair-rust-leather-walnu.jpg",
+    hoverImage: "/mid-century-lounge-chair-side-view.jpg",
+    rating: 4.9,
+    reviewCount: 89,
+  },
+  {
+    id: "3",
+    name: "Copenhagen Coffee Table",
+    slug: "copenhagen-coffee-table",
+    price: 649,
+    category: "tables",
+    colors: ["Natural Oak", "Walnut"],
+    materials: ["Solid Oak", "Brass"],
+    image: "/mid-century-modern-oval-coffee-table-natural-oak-b.jpg",
+    badge: "New",
+    rating: 4.7,
+    reviewCount: 56,
+  },
+  {
+    id: "4",
+    name: "Stockholm Platform Bed",
+    slug: "stockholm-platform-bed",
+    price: 1899,
+    category: "bedroom",
+    colors: ["Walnut", "White Oak"],
+    materials: ["Solid Wood"],
+    image: "/mid-century-modern-platform-bed-walnut-wood-frame-.jpg",
+    rating: 4.9,
+    reviewCount: 203,
+  },
+  {
+    id: "5",
+    name: "Helsinki Dining Chair",
+    slug: "helsinki-dining-chair",
+    price: 349,
+    category: "chairs",
+    colors: ["Black", "White", "Natural"],
+    materials: ["Molded Plastic", "Beech"],
+    image: "/scandinavian-dining-chair-black-molded-seat-beech-.jpg",
+    rating: 4.6,
+    reviewCount: 167,
+  },
+  {
+    id: "6",
+    name: "Malmo Sideboard",
+    slug: "malmo-sideboard",
+    price: 1299,
+    category: "tables",
+    colors: ["Teak", "White"],
+    materials: ["Teak Wood", "Metal"],
+    image: "/mid-century-modern-teak-sideboard-brass-handles-li.jpg",
+    badge: "Bestseller",
+    rating: 4.8,
+    reviewCount: 91,
+  },
+  {
+    id: "7",
+    name: "Aarhus Accent Chair",
+    slug: "aarhus-accent-chair",
+    price: 599,
+    originalPrice: 749,
+    category: "chairs",
+    colors: ["Mustard", "Blush", "Teal"],
+    materials: ["Boucle", "Oak"],
+    image: "/boucle-accent-chair-mustard-yellow-oak-legs-cozy.jpg",
+    badge: "Sale",
+    rating: 4.7,
+    reviewCount: 78,
+  },
+  {
+    id: "8",
+    name: "Gothenburg Three-Seater",
+    slug: "gothenburg-three-seater",
+    price: 1899,
+    category: "sofas",
+    colors: ["Light Grey", "Navy", "Camel"],
+    materials: ["Linen", "Oak"],
+    image: "/three-seater-sofa-light-grey-linen-oak-legs-minima.jpg",
+    rating: 4.8,
+    reviewCount: 145,
+  },
+  {
+    id: "9",
+    name: "Uppsala Nightstand",
+    slug: "uppsala-nightstand",
+    price: 299,
+    category: "bedroom",
+    colors: ["Walnut", "Oak", "White"],
+    materials: ["Solid Wood"],
+    image: "/mid-century-modern-nightstand-walnut-two-drawers-b.jpg",
+    badge: "New",
+    rating: 4.5,
+    reviewCount: 42,
+  },
+  {
+    id: "10",
+    name: "Trondheim Dining Table",
+    slug: "trondheim-dining-table",
+    price: 1599,
+    category: "tables",
+    colors: ["Natural Oak", "Black Oak"],
+    materials: ["Solid Oak", "Steel"],
+    image: "/scandinavian-dining-table-natural-oak-black-steel-.jpg",
+    rating: 4.9,
+    reviewCount: 67,
+  },
+  {
+    id: "11",
+    name: "Reykjavik Bookshelf",
+    slug: "reykjavik-bookshelf",
+    price: 849,
+    category: "tables",
+    colors: ["Walnut", "White Oak"],
+    materials: ["Wood", "Metal"],
+    image: "/mid-century-modern-bookshelf-walnut-open-shelving-.jpg",
+    rating: 4.6,
+    reviewCount: 33,
+  },
+  {
+    id: "12",
+    name: "Tampere Loveseat",
+    slug: "tampere-loveseat",
+    price: 1299,
+    category: "sofas",
+    colors: ["Forest Green", "Terracotta", "Cream"],
+    materials: ["Velvet", "Brass"],
+    image: "/velvet-loveseat-forest-green-brass-legs-mid-centur.jpg",
+    rating: 4.8,
+    reviewCount: 112,
+  },
+]
+
+export const categories = [
+  { name: "All", value: "all" },
+  { name: "Sofas", value: "sofas" },
+  { name: "Chairs", value: "chairs" },
+  { name: "Tables", value: "tables" },
+  { name: "Bedroom", value: "bedroom" },
+]
+
+export const colors = [
+  "Charcoal",
+  "Cream",
+  "Sage",
+  "Rust",
+  "Navy",
+  "Olive",
+  "Natural Oak",
+  "Walnut",
+  "Mustard",
+  "Teal",
+  "Forest Green",
+  "Terracotta",
+]
+
+export const materials = ["Velvet", "Leather", "Linen", "Boucle", "Solid Oak", "Walnut", "Teak Wood", "Brass", "Steel"]

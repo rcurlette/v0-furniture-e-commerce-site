@@ -1,0 +1,192 @@
+export interface CollaborationProduct {
+  id: string
+  name: string
+  slug: string
+  price: number
+  originalPrice: number
+  fabric: string
+  pantoneCode: string
+  pantoneName: string
+  orientation?: string
+  image: string
+  category: string
+}
+
+export const pantoneColors = [
+  {
+    code: "17-1230",
+    name: "Mocha Mousse",
+    hex: "#A47148",
+    description: "A warm, earthy brown inspired by the comforting essence of chocolate and coffee",
+  },
+  {
+    code: "18-4417",
+    name: "Tapestry",
+    hex: "#3D5A73",
+    description: "A deep, sophisticated blue that evokes timeless elegance",
+  },
+  {
+    code: "17-1608",
+    name: "Heather Rose",
+    hex: "#B4838D",
+    description: "An antique-inspired pink that brings warmth and softness to any space",
+  },
+]
+
+export const collaborationProducts: CollaborationProduct[] = [
+  {
+    id: "collab-1",
+    name: "Holt Petite Modular Sectional with Storage Ottoman",
+    slug: "holt-petite-modular-sectional",
+    price: 3864,
+    originalPrice: 5945,
+    fabric: "Crave",
+    pantoneCode: "17-1230",
+    pantoneName: "Mocha Mousse",
+    orientation: "Right",
+    image: "/modular-sectional-sofa-warm-brown-mocha-mousse-vel.jpg",
+    category: "sectionals",
+  },
+  {
+    id: "collab-2",
+    name: "Carin Mixed Material Sectional",
+    slug: "carin-mixed-material-sectional",
+    price: 2664,
+    originalPrice: 4099,
+    fabric: "Mixed Material",
+    pantoneCode: "17-1230",
+    pantoneName: "Mocha Mousse",
+    orientation: "Left",
+    image: "/mixed-material-sectional-sofa-brown-leather-and-fa.jpg",
+    category: "sectionals",
+  },
+  {
+    id: "collab-3",
+    name: "Carly Swivel Chair",
+    slug: "carly-swivel-chair",
+    price: 1383,
+    originalPrice: 2128,
+    fabric: "Checker",
+    pantoneCode: "17-1230",
+    pantoneName: "Mocha Mousse",
+    image: "/swivel-chair-brown-checker-pattern-velvet-mid-cent.jpg",
+    category: "chairs",
+  },
+  {
+    id: "collab-4",
+    name: "Bryant Chair and A Half",
+    slug: "bryant-chair-and-half",
+    price: 1333,
+    originalPrice: 2299,
+    fabric: "Crave",
+    pantoneCode: "17-1608",
+    pantoneName: "Heather Rose",
+    image: "/oversized-accent-chair-dusty-rose-pink-velvet-cozy.jpg",
+    category: "chairs",
+  },
+  {
+    id: "collab-5",
+    name: "Soto Chair",
+    slug: "soto-chair",
+    price: 565,
+    originalPrice: 942,
+    fabric: "Checker",
+    pantoneCode: "18-4417",
+    pantoneName: "Tapestry",
+    image: "/accent-chair-deep-blue-checker-pattern-velvet-mid-.jpg",
+    category: "chairs",
+  },
+  {
+    id: "collab-6",
+    name: "Pama Bed",
+    slug: "pama-bed",
+    price: 1700,
+    originalPrice: 2615,
+    fabric: "Checker",
+    pantoneCode: "17-1230",
+    pantoneName: "Mocha Mousse",
+    orientation: "Queen",
+    image: "/upholstered-platform-bed-brown-checker-velvet-head.jpg",
+    category: "bedroom",
+  },
+  {
+    id: "collab-7",
+    name: "Briar Sleeper Sofa",
+    slug: "briar-sleeper-sofa",
+    price: 2027,
+    originalPrice: 3686,
+    fabric: "Royale",
+    pantoneCode: "18-4417",
+    pantoneName: "Tapestry",
+    image: "/sleeper-sofa-deep-blue-velvet-mid-century-modern-c.jpg",
+    category: "sofas",
+  },
+  {
+    id: "collab-8",
+    name: "Holt Modular Compact Sectional",
+    slug: "holt-modular-compact-sectional",
+    price: 1627,
+    originalPrice: 2958,
+    fabric: "Checker",
+    pantoneCode: "17-1230",
+    pantoneName: "Mocha Mousse",
+    orientation: "Left",
+    image: "/compact-modular-sectional-sofa-brown-checker-velve.jpg",
+    category: "sectionals",
+  },
+  {
+    id: "collab-9",
+    name: "Amelia Grand Chair",
+    slug: "amelia-grand-chair",
+    price: 1060,
+    originalPrice: 1928,
+    fabric: "Crave",
+    pantoneCode: "17-1608",
+    pantoneName: "Heather Rose",
+    image: "/grand-accent-chair-dusty-rose-pink-velvet-tufted-e.jpg",
+    category: "chairs",
+  },
+  {
+    id: "collab-10",
+    name: "Haine Modular Sofa",
+    slug: "haine-modular-sofa",
+    price: 2777,
+    originalPrice: 4272,
+    fabric: "Royale",
+    pantoneCode: "18-4417",
+    pantoneName: "Tapestry",
+    image: "/modular-sofa-deep-blue-velvet-sectional-modern-liv.jpg",
+    category: "sofas",
+  },
+  {
+    id: "collab-11",
+    name: "Lewis Apartment Sectional",
+    slug: "lewis-apartment-sectional",
+    price: 2264,
+    originalPrice: 4116,
+    fabric: "Royale",
+    pantoneCode: "17-1230",
+    pantoneName: "Mocha Mousse",
+    orientation: "Right",
+    image: "/apartment-sectional-sofa-brown-velvet-compact-mode.jpg",
+    category: "sectionals",
+  },
+  {
+    id: "collab-12",
+    name: "Lewis Sofa",
+    slug: "lewis-sofa",
+    price: 1799,
+    originalPrice: 3299,
+    fabric: "Crave",
+    pantoneCode: "17-1230",
+    pantoneName: "Mocha Mousse",
+    image: "/three-seater-sofa-mocha-brown-velvet-mid-century-m.jpg",
+    category: "sofas",
+  },
+]
+
+export const fabrics = [
+  { name: "Crave", description: "Ultra-soft performance velvet" },
+  { name: "Checker", description: "Jacquard velvet with checkerboard pattern" },
+  { name: "Royale", description: "Luxurious plush velvet" },
+]
